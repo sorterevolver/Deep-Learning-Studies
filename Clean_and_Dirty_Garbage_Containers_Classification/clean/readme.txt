@@ -1,1 +1,1 @@
-all clean labeled images should be put in a folder named "clean,"
+All clean labeled images should be added here
