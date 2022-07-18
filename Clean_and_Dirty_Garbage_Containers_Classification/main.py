@@ -90,6 +90,6 @@ for i , (inputs , labels) in enumerate(test_dataloader):
 test_loss_eval.append(testing_loss_eval / iterations_eval)
 test_accuracy_eval.append((100 * correct_eval / len(test_set)))
 print(
-    'Test_Loss: {:.3f}, Test_Accuracy: {:.3f} '
+    'Test_Loss: {:.f}, Test_Accuracy: {:.3f} '
     .format(test_loss_eval[-1] ,
             test_accuracy_eval[-1]))
