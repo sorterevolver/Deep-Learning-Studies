@@ -1,1 +1,1 @@
-and all dirty labeled images should be put in a folder named "dirty." 
+All dirty labeled images should be added here
