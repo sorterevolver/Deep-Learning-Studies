@@ -20,7 +20,7 @@ Folders must be placed in the directory where the python file is.
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
-train_ratio = 0.65
+train_ratio = 0.66
 
 ROOT_PATH = "./clean-dirty/"
 
@@ -57,6 +57,11 @@ test_dataloader = torch.utils.data.DataLoader(dataset=test_set ,
 
 loss_fn = nn.CrossEntropyLoss(label_smoothing=0.11)
 loss_fn = loss_fn.to(device)
+
+#You need to download the most successful model from the address
+#'https://drive.google.com/file/d/1lcre_HX21TkaRfAEoaw9Q-zYxwQQRxgp/view?usp=sharing' 
+#which is the address in the 'model_download_address.txt' text file.
+#After downloading you need to put the model file in the main directory.
 model = torch.load('Vgg19_bn_size_448.pth')
 
 # Network enters evaluation mode
