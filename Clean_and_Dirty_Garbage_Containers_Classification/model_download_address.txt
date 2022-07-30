@@ -1,2 +1,2 @@
-For VGG19-Bn:
+For VGG19-Bn with 448*448 crop size:
 https://drive.google.com/file/d/1lcre_HX21TkaRfAEoaw9Q-zYxwQQRxgp/view?usp=sharing
