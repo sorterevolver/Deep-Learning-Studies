@@ -42,8 +42,8 @@ train_set , test_set = random_split(dataset_imgs , [int(train_ratio * len(datase
 # Resize, and the crop should be selected in the transform operation
 # according to the size in which the model is most successful.
 test_set.dataset.transform = transforms.Compose([
-    transforms.Resize(320) ,
-    transforms.CenterCrop(300) ,
+    transforms.Resize(512) ,
+    transforms.CenterCrop(448) ,
     transforms.ToTensor()
 ])
 
@@ -57,7 +57,7 @@ test_dataloader = torch.utils.data.DataLoader(dataset=test_set ,
 
 loss_fn = nn.CrossEntropyLoss(label_smoothing=0.11)
 loss_fn = loss_fn.to(device)
-model = torch.load('mobilenet_v3_large_size_300.pth')
+model = torch.load('Vgg19_bn_size_448.pth')
 
 # Network enters evaluation mode
 
