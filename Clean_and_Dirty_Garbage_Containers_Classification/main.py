@@ -58,10 +58,10 @@ test_dataloader = torch.utils.data.DataLoader(dataset=test_set ,
 loss_fn = nn.CrossEntropyLoss(label_smoothing=0.11)
 loss_fn = loss_fn.to(device)
 
-#You need to download the most successful model from the address
-#'https://drive.google.com/file/d/1lcre_HX21TkaRfAEoaw9Q-zYxwQQRxgp/view?usp=sharing' 
-#which is the address in the 'model_download_address.txt' text file.
-#After downloading you need to put the model file in the main directory.
+#You need to download one of the most successful models from the 'model_download_address.txt' text file.
+#After downloading, you must put the model file in the main directory.
+
+#As an example:
 model = torch.load('Vgg19_bn_size_448.pth')
 
 # Network enters evaluation mode
