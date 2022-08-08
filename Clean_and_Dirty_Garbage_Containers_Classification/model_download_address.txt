@@ -1,2 +1,2 @@
-For VGG19-Bn with 448*448 crop size:
-https://drive.google.com/file/d/1lcre_HX21TkaRfAEoaw9Q-zYxwQQRxgp/view?usp=sharing
+The directory where the most successful models can be downloaded with 448*448 crop size:
+https://drive.google.com/drive/folders/1e9tXlbg8rn0lM2aoNPjGX2yOTEaWMdqX
